@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-
-
-
-
-
-
+  get 'welcome/index'
+  root to: 'welcome#index'
   resources :innings, shallow: true do
     resources :battings do
       resources :batters
